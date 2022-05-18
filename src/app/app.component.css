@@ -1,0 +1,12 @@
+.operation-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.operation-list li{
+    font-weight: 300;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.8rem;
+    
+}

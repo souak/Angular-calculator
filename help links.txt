@@ -1,0 +1,32 @@
+https://www.tektutorialshub.com/angular/using-switchmap-in-angular/#:~:text=The%20Angular%20SwitchMap%20maps%20each,it%20receives%20from%20the%20Source.
+
+https://www.techiediaries.com/angular-local-json-files/
+
+https://www.tektutorialshub.com/angular/using-mergemap-in-angular/#:~:text=The%20Angular%20MergeMap%20maps%20each,it%20receives%20from%20the%20Source.
+
+
+
+this.numbers.map((item: any) => {
+        return firstNumbers.push(item.value), operators.push(item.action);
+      });
+      console.log(firstNumbers);
+      let srcObs = of(firstNumbers);
+      console.log(operators);
+      let innerObs = of(...operators);
+
+      srcObs.pipe(
+        mergeMap( val => {
+                 
+          return innerObs
+        })
+      )
+      .subscribe(ret=> {
+        if (ret === 'add') {
+          this.addOperation()
+        }if (ret === 'multiply') {
+          this.multiplyOperation()
+        } else {
+          
+        }
+        
+      })

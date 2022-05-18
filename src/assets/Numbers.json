@@ -1,0 +1,12 @@
+[
+  { "id": 1, "value": 1 }, 
+  { "id": 2, "value": 2, "action":"multiply" },
+  { "id": 3, "value": 3, "action": "add" },
+  { "id": 4, "value": 4, "action": "add" },
+  { "id": 5, "value": 5 },
+  { "id": 6, "value": 6, "action": "multiply" },
+  { "id": 7, "value": 3, "action": "add" },
+  { "id": 8, "value": 4, "action": "add" },
+  { "id": 9, "value": 3, "action": "add" },
+  { "id": 10, "value": 4, "action": "add" }
+]
